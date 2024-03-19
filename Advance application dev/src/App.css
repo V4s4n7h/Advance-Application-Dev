@@ -1,0 +1,685 @@
+@import "rsuite/dist/rsuite.css";
+
+.land_text {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  color: rgb(251, 250, 250);
+
+
+}
+
+.no_video_text {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  position: absolute;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  color: rgb(3, 3, 3);
+
+
+}
+
+.no_video_text_feed {
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 5%;
+  margin-top: 5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  position: absolute;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  color: rgb(3, 3, 3);
+
+
+}
+
+/* .text_container {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  color: rgb(4, 4, 4);
+
+} */
+
+.mainContainer {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  margin-top: 15%;
+  /* background-color: whitesmoke; */
+  padding-bottom: 2%;
+  object-fit: contain;
+  width: 500px;
+  /* border: 2px solid rgba(255, 255, 255, 0.2); */
+  border-radius: 10px;
+  margin-left: 35%;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px rgb(200, 199, 199);
+  position: fixed;
+}
+
+.mainContainer_book {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  background-color: whitesmoke;
+ 
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+
+  font-weight:300;
+  font-size:6ch;
+  color:lightgray;
+
+  
+}
+
+.resultContainer, .historyItem { 
+  flex-direction: row;
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.historyContainer {
+  flex-direction: column;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  flex-grow: 5;
+  justify-content: flex-start;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: transparent;
+}
+
+.inputContainer > .errorLabel {
+  color: red;
+  font-size: 12px;
+}
+
+
+.inputBox {
+  height: 1cm;
+  width: 8cm;
+  font-size: large;
+  color:lightgray;
+  border-radius: 8px;
+  border: 1px solid rgb(173, 171, 171);
+  padding-left: 8px;
+  transition: transform 0.2s;
+  background: transparent;
+  text-decoration: none;
+  /* box-shadow: 1px 1px 1px 1px grey; */
+}
+
+.inputBox_Feed {
+  height: 6cm;
+  width: 8cm;
+  font-size: large;
+  color:lightgray;
+  border-radius: 8px;
+  border: 1px solid rgb(173, 171, 171);
+  padding-left: 8px;
+  transition: transform 0.2s;
+  background: transparent;
+  text-decoration: none;
+}
+
+.inputBox:hover { 
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(249, 248, 248);
+  /* box-shadow: 1px 1px 1px 1px rgb(4, 4, 4); */
+}
+
+.inputBox_Feed:hover { 
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(249, 248, 248);
+  /* box-shadow: 1px 1px 1px 1px rgb(4, 4, 4); */
+}
+
+.inputBox_Button {
+  height: 1cm;
+  width: 8cm;
+  font-size: large;
+  color:lightgray;
+  border-radius: 8px;
+  border: 1px solid rgb(173, 171, 171);
+  padding-left: 8px;
+  transition: transform 0.2s;
+  background: transparent;
+}
+
+.inputBox_Button:hover { 
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(249, 248, 248);
+}
+
+.inputButton {
+  /* border: 2px solid rgb(198, 23, 23); */
+  background: transparent;
+  color: rgb(5, 5, 5);
+  padding: 6px 15px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: light;
+  transition:transform 0.3s;
+}
+
+.inputButton:hover {
+  transform: scale(0.9);
+  color: black;
+  border: solid black 1px;
+  /* box-shadow: 1px 1px 1px 1px grey; */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  /* margin: 20px; */
+  margin-top: 25%;
+  margin-left: 2%;
+
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition:transform 0.3s;
+}
+
+.avatar:hover {
+transform:scale(1.2);
+}
+
+
+.info {
+  color: #000; 
+
+}
+
+
+
+.username {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  margin-left: 5%;
+  color:whitesmoke;
+}
+
+.user_description {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: medium;
+  color:whitesmoke;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(50%);
+    /* filter:grayscale(0.5); */
+    position: fixed;
+    /* right: 0;
+    bottom: 0; */
+    /* min-width: 100%; 
+    min-height: 100%; */
+    z-index: -1;
+    
+}
+
+/* .overlay {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  background-color: #000000cc;
+} */
+
+.navbar {
+  position:absolute;
+  top: 0;
+  right: 0;
+  /* width:100%; */
+  padding-top: 2%;
+  padding-right: 2%;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  display: flex;
+  /* font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif; */
+  font-family: 'Mulish',sans-serif;
+  place-items: center;
+  font-size: 2.5ch;
+  font-weight:lighter;
+  /* width:100vh; */
+  /* color:rgb(175, 178, 178); */
+
+}
+
+.others {
+  color: white; /* Text color for the links */
+  text-decoration: none;
+  margin: 8px 20px;
+  /* padding-inline: 10px; */
+}
+.others {
+  background-image: linear-gradient(
+    to right,
+    #4e4f4f,
+    #818383 50%,
+    rgb(253, 252, 252) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.others:before {
+  content: '';
+  /* background: whitesmoke; */
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.5s ease-in-out;
+  transition: transform(0.5s);
+}
+
+.others:hover {
+ background-position: 0;
+ transform: scale(1.1);
+}
+
+.others:hover::before {
+  width:100%;
+}
+
+.title {
+  position: fixed;
+  margin-top: 20%;
+  margin-left: 30%;
+ } 
+
+.header {
+  width: 400px;
+  overflow: hidden;
+  padding: 0%;
+  margin: 10 auto;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Roboto'; */
+  font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+  font-size:14ch;
+  /* font-weight:bold; */
+  color: white;
+  white-space: nowrap;
+  /* border-right: 0.05em solid rgb(136, 141, 141); */
+  animation: typing 3s steps(120, end), blink-caret 2s step-end infinite;
+  object-fit: contain;
+}
+@keyframes typing {
+  from { width: 0}
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(136, 141, 141);
+  }
+}
+
+.delay {
+  font-size: 2.5ch;
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: 'Roboto'; */
+  color:rgb(251, 249, 249);
+  animation-name: move;
+  animation-delay: 150ms;
+  animation-duration: 2.5s;
+  animation-fill-mode:forwards;
+  position: relative;
+  word-spacing: 2px;
+  font-weight:light;
+  margin-right: 35%;
+}
+@keyframes move {
+  from { left: 0%; }
+  to { left: 30%; }
+}
+
+.img1_title{
+  position: fixed;
+  margin-right:70%;
+  margin-left: 20%;
+  margin-bottom: 25%;
+  
+ }
+
+ .img1_title4{
+  position: fixed;
+  margin-right:70%;
+  margin-left: 10%;
+  margin-bottom: 25%;
+  
+ }
+ .img1_delay-1500 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+ }
+ .header_img1 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+   font-size:10ch;
+   color:white;
+ }
+ 
+ .img1_title2 {
+   position: fixed;
+  margin-left:40%;
+  margin-right: 20%;
+  margin-top: 20%;
+ }
+
+ .img1_title3 {
+  position: fixed;
+ margin-left:40%;
+ margin-right: 20%;
+ margin-top: 30%;
+}
+ 
+ .header2_img1 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Sans-serif;
+   font-size:10ch;
+   /* font-weight: bold; */
+   /* font-family: 'Roboto', sans-serif; */
+   color: white;
+ }
+ 
+ .img1_delay-1500-2 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+   
+ }
+ 
+ .parallax_con {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.profile_page{
+  background-color: #000;
+}
+
+/* .img1_title{
+  position: fixed;
+  margin-right:70%;
+  margin-left: 20%;
+  margin-bottom: 20%;
+  
+ }
+ .img1_delay-1500 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+ }
+ .header_img1 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+   font-size:14ch;
+   color:white;
+ }
+ 
+ .img1_title2 {
+   position: fixed;
+  margin-left:40%;
+  margin-right: 20%;
+  margin-top: 25%;
+ } */
+ 
+ .header2_img1 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Sans-serif;
+   font-size:14ch;
+   /* font-weight: bold; */
+   /* font-family: 'Roboto', sans-serif; */
+   color: white;
+ }
+ 
+ .img1_delay-1500-2 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+   
+ }
+ 
+ .img2_title{
+   position: fixed;
+   margin-left:60%;
+   margin-right: 20%;
+   margin-bottom: 20%;
+   
+  }
+  .img2_delay-1500 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+    
+  }
+  .header_img2 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+   font-size:14ch;
+   color:white;
+    
+  }
+  
+  .img2_title2 {
+    position: fixed;
+   margin-right:60%;
+   margin-left: 10%;
+   margin-top: 25%;
+  }
+  
+  .header2_img2 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+   font-size:14ch;
+   color:white;
+  }
+  
+  .img2_delay-1500-2 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+  }
+ 
+  .img3_title{
+   position: fixed;
+   margin-left:60%;
+   margin-right: 20%;
+   margin-bottom: 20%;
+   
+  }
+  .img3_delay-1500 {
+    font-size: 1.8ch;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif; */
+    color:white;
+    animation-name: move;
+    animation-delay: 150ms;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    position: relative;
+    word-spacing:5px;
+    
+  }
+  .header_img3 {
+    overflow: hidden;
+    font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+    font-size:12ch;
+    /* font-weight: bold; */
+    color: rgb(223, 226, 226);
+    
+  }
+  
+  .img3_title2 {
+    position: fixed;
+   margin-left:50%;
+   margin-right: 20%;
+   margin-top: 20%;
+   margin-bottom: 20%;
+  }
+  
+  .header2_img3 {
+   overflow: hidden;
+   font-family: "Poppins",-apple-system,BlinkMacSystemFont,Roboto,Arial,Sans-serif;
+   font-size:14ch;
+   color:white;
+  }
+  
+  .img3_delay-1500-2 {
+   font-size: 2.5ch;
+   font-family: 'Mulish',sans-serif;
+   color:white;
+   animation-name: move;
+   animation-delay: 150ms;
+   animation-duration: 2s;
+   animation-fill-mode:forwards;
+   position: relative;
+   word-spacing: 3px;
+   line-height: 1.5em;
+   font-weight: lighter;
+  }
